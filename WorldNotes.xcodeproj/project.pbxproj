@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		3F02DE6625F4200100C17BB6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE6525F4200100C17BB6 /* AppDelegate.swift */; };
 		3F02DE6825F4200100C17BB6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE6725F4200100C17BB6 /* SceneDelegate.swift */; };
-		3F02DE6A25F4200100C17BB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE6925F4200100C17BB6 /* ViewController.swift */; };
+		3F02DE6A25F4200100C17BB6 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE6925F4200100C17BB6 /* MapViewController.swift */; };
 		3F02DE6D25F4200100C17BB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F02DE6B25F4200100C17BB6 /* Main.storyboard */; };
 		3F02DE7025F4200100C17BB6 /* WorldNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE6E25F4200100C17BB6 /* WorldNotes.xcdatamodeld */; };
 		3F02DE7225F4200200C17BB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F02DE7125F4200200C17BB6 /* Assets.xcassets */; };
 		3F02DE7525F4200200C17BB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F02DE7325F4200200C17BB6 /* LaunchScreen.storyboard */; };
+		3F02DE7F25F4540900C17BB6 /* MyNotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE7E25F4540900C17BB6 /* MyNotesTableViewController.swift */; };
+		3F02DE8225F4543500C17BB6 /* ComposeNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3F02DE6225F4200100C17BB6 /* WorldNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F02DE6525F4200100C17BB6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3F02DE6725F4200100C17BB6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3F02DE6925F4200100C17BB6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3F02DE6925F4200100C17BB6 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3F02DE6C25F4200100C17BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3F02DE6F25F4200100C17BB6 /* WorldNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WorldNotes.xcdatamodel; sourceTree = "<group>"; };
 		3F02DE7125F4200200C17BB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F02DE7425F4200200C17BB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F02DE7625F4200200C17BB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F02DE7E25F4540900C17BB6 /* MyNotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNotesTableViewController.swift; sourceTree = "<group>"; };
+		3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,12 +64,14 @@
 			children = (
 				3F02DE6525F4200100C17BB6 /* AppDelegate.swift */,
 				3F02DE6725F4200100C17BB6 /* SceneDelegate.swift */,
-				3F02DE6925F4200100C17BB6 /* ViewController.swift */,
+				3F02DE6925F4200100C17BB6 /* MapViewController.swift */,
 				3F02DE6B25F4200100C17BB6 /* Main.storyboard */,
 				3F02DE7125F4200200C17BB6 /* Assets.xcassets */,
 				3F02DE7325F4200200C17BB6 /* LaunchScreen.storyboard */,
 				3F02DE7625F4200200C17BB6 /* Info.plist */,
 				3F02DE6E25F4200100C17BB6 /* WorldNotes.xcdatamodeld */,
+				3F02DE7E25F4540900C17BB6 /* MyNotesTableViewController.swift */,
+				3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */,
 			);
 			path = WorldNotes;
 			sourceTree = "<group>";
@@ -140,8 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F02DE7F25F4540900C17BB6 /* MyNotesTableViewController.swift in Sources */,
 				3F02DE7025F4200100C17BB6 /* WorldNotes.xcdatamodeld in Sources */,
-				3F02DE6A25F4200100C17BB6 /* ViewController.swift in Sources */,
+				3F02DE6A25F4200100C17BB6 /* MapViewController.swift in Sources */,
+				3F02DE8225F4543500C17BB6 /* ComposeNoteViewController.swift in Sources */,
 				3F02DE6625F4200100C17BB6 /* AppDelegate.swift in Sources */,
 				3F02DE6825F4200100C17BB6 /* SceneDelegate.swift in Sources */,
 			);

@@ -18,6 +18,7 @@
 		3F02DE8225F4543500C17BB6 /* ComposeNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */; };
 		3F02DE8725F47F7100C17BB6 /* Note+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE8525F47F7100C17BB6 /* Note+CoreDataClass.swift */; };
 		3F02DE8825F47F7100C17BB6 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE8625F47F7100C17BB6 /* Note+CoreDataProperties.swift */; };
+		3F02DE8D25F4C21000C17BB6 /* DetailNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F02DE8C25F4C21000C17BB6 /* DetailNoteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeNoteViewController.swift; sourceTree = "<group>"; };
 		3F02DE8525F47F7100C17BB6 /* Note+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataClass.swift"; sourceTree = "<group>"; };
 		3F02DE8625F47F7100C17BB6 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F02DE8C25F4C21000C17BB6 /* DetailNoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNoteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				3F02DE6E25F4200100C17BB6 /* WorldNotes.xcdatamodeld */,
 				3F02DE7E25F4540900C17BB6 /* MyNotesTableViewController.swift */,
 				3F02DE8125F4543500C17BB6 /* ComposeNoteViewController.swift */,
+				3F02DE8C25F4C21000C17BB6 /* DetailNoteViewController.swift */,
 			);
 			path = WorldNotes;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			files = (
 				3F02DE7F25F4540900C17BB6 /* MyNotesTableViewController.swift in Sources */,
 				3F02DE8825F47F7100C17BB6 /* Note+CoreDataProperties.swift in Sources */,
+				3F02DE8D25F4C21000C17BB6 /* DetailNoteViewController.swift in Sources */,
 				3F02DE8725F47F7100C17BB6 /* Note+CoreDataClass.swift in Sources */,
 				3F02DE7025F4200100C17BB6 /* WorldNotes.xcdatamodeld in Sources */,
 				3F02DE6A25F4200100C17BB6 /* ViewController.swift in Sources */,

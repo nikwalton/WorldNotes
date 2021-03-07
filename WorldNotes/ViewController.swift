@@ -37,13 +37,7 @@ class ViewController: UIViewController {
     
     @IBAction func unwindComposeAdd(sender: UIStoryboardSegue){
         let vc = sender.source as! ComposeNoteViewController
-        let newNote = Note(context: context)
-        newNote.note = vc.NoteBox.text
-        newNote.date_posted = Date()
-        
-        let currentLocation = locationManager.location
-        newNote.latitude = currentLocation?.coordinate.latitude ?? 0.0
-        newNote.longitude = currentLocation?.coordinate.longitude ?? 0.0
+        createNote(text: vc.NoteBox.text)
     }
     
     @IBAction func unwindViewNotes(sender: UIStoryboardSegue){

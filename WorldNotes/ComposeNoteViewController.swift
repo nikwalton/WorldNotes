@@ -9,7 +9,9 @@ import UIKit
 
 class ComposeNoteViewController: UIViewController, UITextFieldDelegate {
 
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     let inspirationNouns = ["Funny", "Loving", "Helpful", "Inspiring", "That made you laugh", "You got done today"]
+   
     @IBOutlet weak var NoteBox: UITextView!
     @IBOutlet weak var InspirationPrompt: UILabel!
     @IBOutlet weak var TextInputField: UITextView!

@@ -14,6 +14,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func unwindComposeCancel(sender: UIStoryboardSegue){
+        
+    }
+    
+    @IBAction func unwindComposeAdd(sender: UIStoryboardSegue){
+        
+    }
+    
 }
 

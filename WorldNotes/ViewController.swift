@@ -6,13 +6,27 @@
 //
 
 import UIKit
+import MapKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var MapView: MKMapView!
+    fileprivate let locationManager:CLLocationManager = CLLocationManager()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.startUpdatingLocation()
+        MapView.showsUserLocation = true
     }
+    
+    
+    // BEGIN: Unwind declarations
+     
 
     @IBAction func unwindComposeCancel(sender: UIStoryboardSegue){
         
@@ -22,5 +36,8 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func unwindViewNotes(sender: UIStoryboardSegue){
+    }
+    //END: Unwind Declarations
 }
 

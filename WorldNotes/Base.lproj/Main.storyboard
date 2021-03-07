@@ -26,17 +26,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="WorldNotes" id="deR-vi-Hnd">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="bookmarks" id="AW8-VL-Aa6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="bookmarks" id="AW8-VL-Aa6">
                             <connections>
                                 <segue destination="7vG-5h-YER" kind="show" id="RHE-3f-P5G"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="a3y-Zm-Wio">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="a3y-Zm-Wio">
                             <connections>
                                 <segue destination="TjJ-eP-m20" kind="show" identifier="composeNote" id="A5i-wv-Xf7"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="MapView" destination="WGq-VX-h8k" id="6b6-Yp-eep"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="695.6521739130435" y="93.75"/>
@@ -61,7 +64,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write your heart out" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-oa-igv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write your heart out" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-oa-igv">
                                 <rect key="frame" x="20" y="146" width="374" height="464"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -80,12 +83,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Compose Note" id="kEA-8D-VEw">
-                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="f1n-sg-Jc4">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="f1n-sg-Jc4">
                             <connections>
                                 <segue destination="yE8-Ro-8vK" kind="unwind" unwindAction="unwindComposeCancelWithSender:" id="7JZ-h3-HG4"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="1Fs-cM-Zqt">
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="1Fs-cM-Zqt">
                             <connections>
                                 <segue destination="yE8-Ro-8vK" kind="unwind" unwindAction="unwindComposeAddWithSender:" id="J1Z-Qj-NPE"/>
                             </connections>
@@ -125,13 +128,18 @@
                             <outlet property="delegate" destination="7vG-5h-YER" id="lWF-No-Omb"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem style="plain" systemItem="bookmarks" id="UqI-Qq-LcQ"/>
-                    </toolbarItems>
-                    <navigationItem key="navigationItem" title="My Notes" id="C2n-UR-rcH"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="My Notes" id="C2n-UR-rcH">
+                        <barButtonItem key="leftBarButtonItem" style="plain" systemItem="done" id="H18-dJ-OGP">
+                            <connections>
+                                <segue destination="DIU-wn-5Aq" kind="unwind" unwindAction="unwindViewNotesWithSender:" id="lCf-vm-05q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ncp-7x-cQO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="DIU-wn-5Aq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1781" y="-318"/>
         </scene>

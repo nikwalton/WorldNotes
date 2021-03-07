@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ComposeNoteViewController: UIViewController {
+class ComposeNoteViewController: UIViewController, UITextFieldDelegate {
 
     let inspirationNouns = ["Funny", "Loving", "Helpful", "Inspiring", "That made you laugh", "You got done today"]
     @IBOutlet weak var NoteBox: UITextView!
@@ -22,6 +22,11 @@ class ComposeNoteViewController: UIViewController {
         TextInputField.layer.borderWidth = 2.0
         TextInputField.layer.cornerRadius = 8.0
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
     }
     
 

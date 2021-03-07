@@ -137,6 +137,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="CHb-yT-Qcc" kind="show" id="Qge-9E-bM9"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -158,6 +161,22 @@
                 <exit id="DIU-wn-5Aq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1781" y="-318"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="mLJ-Zv-jeB">
+            <objects>
+                <viewController id="CHb-yT-Qcc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLI-dw-px4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="lK3-gj-U5L"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="keY-vh-6We"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mVx-rH-SI6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2663" y="-328"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dsT-Pw-WnT">

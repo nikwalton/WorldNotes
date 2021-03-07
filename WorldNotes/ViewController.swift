@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.startUpdatingLocation()
         MapView.showsUserLocation = true
+        MapView.tintColor = UIColor.blue
     
     }
     

@@ -9,10 +9,19 @@ import UIKit
 
 class ComposeNoteViewController: UIViewController {
 
+    let inspirationNouns = ["Funny", "Loving", "Helpful", "Inspiring", "That made you laugh", "You got done today"]
+    @IBOutlet weak var NoteBox: UITextView!
+    @IBOutlet weak var InspirationPrompt: UILabel!
+    @IBOutlet weak var TextInputField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let randomNum = Int.random(in: 0...5)
+        // Do any additional setup after loading the view
+        InspirationPrompt.text = inspirationNouns[randomNum]
+        TextInputField.layer.borderWidth = 2.0
+        TextInputField.layer.cornerRadius = 8.0
+        
     }
     
 

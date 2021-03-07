@@ -44,26 +44,24 @@
         <!--Compose Note-->
         <scene sceneID="wAQ-jz-pSL">
             <objects>
-                <viewController id="TjJ-eP-m20" sceneMemberID="viewController">
+                <viewController id="TjJ-eP-m20" customClass="ComposeNoteViewController" customModule="WorldNotes" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ELS-9b-wMV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Write Something..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAi-IM-5qH">
-                                <rect key="frame" x="137" y="88" width="141" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write Something..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAi-IM-5qH">
+                                <rect key="frame" x="136.5" y="88" width="141" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Random Noun" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48a-1m-LV7">
-                                <rect key="frame" x="153" y="117" width="109" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Noun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48a-1m-LV7">
+                                <rect key="frame" x="153" y="117" width="108.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Random Inspiration Quote" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-oa-igv">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Write your heart out" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pRD-oa-igv">
                                 <rect key="frame" x="20" y="146" width="374" height="464"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -74,6 +72,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GnU-N7-R7w"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="48a-1m-LV7" firstAttribute="top" secondItem="TAi-IM-5qH" secondAttribute="bottom" constant="8" symbolic="YES" id="6bq-ei-Ige"/>
+                            <constraint firstItem="TAi-IM-5qH" firstAttribute="centerX" secondItem="ELS-9b-wMV" secondAttribute="centerX" id="hcD-3a-YZ5"/>
+                            <constraint firstItem="TAi-IM-5qH" firstAttribute="top" secondItem="GnU-N7-R7w" secondAttribute="top" id="nnT-Jo-cLE"/>
+                            <constraint firstItem="48a-1m-LV7" firstAttribute="centerX" secondItem="ELS-9b-wMV" secondAttribute="centerX" id="x1o-F2-AnJ"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Compose Note" id="kEA-8D-VEw">
                         <barButtonItem key="leftBarButtonItem" style="plain" systemItem="cancel" id="f1n-sg-Jc4">
@@ -87,6 +91,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="InspirationPrompt" destination="48a-1m-LV7" id="qGr-bq-eRH"/>
+                        <outlet property="NoteBox" destination="pRD-oa-igv" id="1a8-yM-SUi"/>
+                        <outlet property="TextInputField" destination="pRD-oa-igv" id="2Bb-ch-vge"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7X-Xl-gHH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="yE8-Ro-8vK" userLabel="Exit" sceneMemberID="exit"/>
